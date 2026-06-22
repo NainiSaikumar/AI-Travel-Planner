@@ -18,8 +18,8 @@ export default function TripDetailsPage() {
   const fetchTrip = async () => {
     try {
       const response = await fetch(
-        `https://ai-travel-planner-jhd4.onrender.com/api/auth/trip/${tripId}`
-      );
+  `https://ai-travel-planner-jhd4.onrender.com/api/trips/${tripId}`
+);
 
       const data = await response.json();
 

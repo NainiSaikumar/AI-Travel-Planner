@@ -13,7 +13,7 @@ export default function MyTripsPage() {
   const fetchTrips = async () => {
     try {
       const response = await fetch(
-        "https://ai-travel-planner-jhd4.onrender.com/api/auth"
+        "https://ai-travel-planner-jhd4.onrender.com/api/trips"
       );
 
       const data = await response.json();
@@ -27,7 +27,7 @@ export default function MyTripsPage() {
   const handleDeleteTrip = async (id: string) => {
     try {
       const response = await fetch(
-        `https://ai-travel-planner-jhd4.onrender.com/api/auth/${id}`,
+        `https://ai-travel-planner-jhd4.onrender.com/api/trips/${id}`,
         {
           method: "DELETE",
         }
