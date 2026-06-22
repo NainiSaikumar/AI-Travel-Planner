@@ -15,7 +15,7 @@ export default function DashboardPage() {
   const handleCreateTrip = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/trips/create",
+        "https://ai-travel-planner-jhd4.onrender.com/api/auth/create",
         {
           method: "POST",
           headers: {
@@ -48,7 +48,7 @@ export default function DashboardPage() {
   const handleGenerateItinerary = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/trips/generate-itinerary",
+        "https://ai-travel-planner-jhd4.onrender.com/api/auth/generate-itinerary",
         {
           method: "POST",
           headers: {

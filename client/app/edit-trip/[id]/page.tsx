@@ -19,7 +19,7 @@ export default function EditTripPage() {
   const fetchTrip = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/trips/${params.id}`
+        `https://ai-travel-planner-jhd4.onrender.com/api/auth/trips/${params.id}`
       );
 
       const data = await response.json();
@@ -38,7 +38,7 @@ export default function EditTripPage() {
   const handleUpdateTrip = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/trips/${params.id}`,
+        `https://ai-travel-planner-jhd4.onrender.com/api/auth/trips/${params.id}`,
         {
           method: "PUT",
           headers: {
