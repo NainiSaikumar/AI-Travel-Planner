@@ -9,7 +9,7 @@ export default function LoginPage() {
   const handleLogin = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://ai-travel-planner-jhd4.onrender.com",
         {
           method: "POST",
           headers: {
